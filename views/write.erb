@@ -1,0 +1,11 @@
+<h1>게시글 작성 폼</h1>
+<form action="/register">
+  작성자 :
+  <select name="name">
+    <option value="익명">익명</option>
+    <option value="<%= session[:email] %>">내 아이디</option>
+  </select> <br>
+  제목 : <input type="text" name="title"><br>
+  내용 : <input type="text" name="content">
+  <input type="submit" value="글쓰기">
+</form>

@@ -1,0 +1,8 @@
+<% @users.each do |user| %>
+  <p>
+    <%= user.id %>
+    <%= user.email %>
+    <%= user.password %>
+    <%= user.created_at %>
+  <p>
+<% end %>
